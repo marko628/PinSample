@@ -3,6 +3,7 @@
 //  PinSample
 //
 //  Created by Jason on 3/23/15.
+//  Updated by Mark on 5/10/18
 //  Copyright (c) 2015 Udacity. All rights reserved.
 //
 
@@ -56,7 +57,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             let last = dictionary["lastName"] as! String
             let mediaURL = dictionary["mediaURL"] as! String
             
-            // Here we create the annotation and set its coordiate, title, and subtitle properties
+            // Here we create the annotation and set its coordinate, title, and subtitle properties
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = "\(first) \(last)"
