@@ -84,13 +84,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
     var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
 
         if pinView == nil {
-            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView!.canShowCallout = true
+          pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+          pinView!.canShowCallout = true
           pinView!.pinTintColor = .red
           pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
         else {
-            pinView!.annotation = annotation
+          pinView!.annotation = annotation
         }
         
         return pinView
